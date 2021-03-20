@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          Roll20 Dark
-// @namespace     https://openuserjs.org/scripts/RedReign/Roll20_Dark
+// @namespace     https://openuserjs.org/scripts/Pharonix/Roll20_Dark
 // @description	  A dark theme for Roll20.net.
 // @author        RedReign edited by Pharonix
 // @include       https://app.roll20.net/editor*
