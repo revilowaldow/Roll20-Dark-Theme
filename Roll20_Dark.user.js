@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2021.3.20
+// @version       2021.3.20.2
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -315,14 +315,28 @@ BIO Tab in Char Sheet
 
 /*
 =================================================
+NPC SHEETS
+*/
+
+.licensecontainer .npc_toggle[value="1"] ~ .npc {
+    background-color: hsl(0,0%,10%) !important;
+}
+.licensecontainer .npc_toggle[value="1"] ~ .npc .actions, .licensecontainer .npc_toggle[value="1"] ~ .npc .stat-block {
+    background-color: hsl(0,0%,10%) !important;
+}
+.licensecontainer .npc_toggle[value="1"] + .npcspellcastingflag[value="1"] ~ .pc .page.spells .body .col {
+    background-color: hsl(0,0%,10%) !important;
+}
+
+
+/*
+
+
 
 
 
 
 */
-
-
-
 
 .ui-dialog {
     background-color: hsl(0,0%,10%);
