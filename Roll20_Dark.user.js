@@ -309,6 +309,10 @@ BIO Tab in Char Sheet
     color: #BFBFBF !important;
 }
 
+.licensecontainer .container:not(.npc) .subcontainer .row-container input[type=checkbox]:checked {
+    background-color: orange !important;
+}
+
 /*
 =================================================
 
