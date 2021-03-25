@@ -357,7 +357,7 @@ NPC SHEETS
 }
 
 body {
-    background:url(http://subtlepatterns.com/patterns/dark_leather.png)!important;
+    background:url(https://www.toptal.com/designers/subtlepatterns/patterns/dark_leather.png)!important;
 }
 
 #floatingtoolbar, #floatinglayerbar {
