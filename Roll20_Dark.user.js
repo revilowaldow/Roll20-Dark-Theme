@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2021.3.25.0
+// @version       2021.4.4.0
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -97,7 +97,9 @@ div.globaldisplay {
 	background-color: #2a2a2a !important;
 }
 
-
+div.sheet-rolltemplate-dmgaction {
+	background-color: hsl(0,0%,10%) !important;
+}
 
 .licensecontainer .container:not(.npc) .core .col2 .vitals:after {
     content: "";
