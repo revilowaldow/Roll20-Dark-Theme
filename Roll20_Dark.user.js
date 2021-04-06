@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2021.4.4.0
+// @version       2021.4.5.0
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -100,6 +100,7 @@ div.globaldisplay {
 div.sheet-rolltemplate-dmgaction {
 	background-color: hsl(0,0%,10%) !important;
 }
+
 
 .licensecontainer .container:not(.npc) .core .col2 .vitals:after {
     content: "";
@@ -260,6 +261,37 @@ button[name=attr_toolname] {
 }
 
 /*
+Fix Borders
+
+
+*/
+.tool_proficiencies
+{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 5px;
+    border: 5px solid black;
+    border-image-source: url("https://gistcdn.githack.com/RedReign/23e65423c73f9cab74a6a822e642f34f/raw/bb06f1e12c567784bef0d55353b6911cdfcbf502/OGLproficiencyBlock.svg") !important;
+    border-image-slice: 5 10;
+    border-image-width: 15px;
+    border-image-repeat: round;
+}
+.proficiencies, .equipment, .traits, .attacks
+{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    border: 5px solid black;
+    border-image-source: url("https://gistcdn.githack.com/RedReign/5ee291a1048ad661e3d867aafa262af0/raw/282e8573c504f09f910b7b9e07ab0cf57a60eaa7/OGL5eBorder.svg")!important;
+    border-image-slice: 6% 8% 12% 8%;
+    border-image-width: 16px 19px 35px 19px;
+    border-image-repeat: round;
+}
+
+
+/*
 BIO Tab in Char Sheet
 
 */
@@ -282,6 +314,20 @@ BIO Tab in Char Sheet
     border-image-repeat: round;
     text-align: center;
 }
+/*
+.textbox-container proficiencies
+{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    border: 5px solid black;
+    border-image-source: url("https://gistcdn.githack.com/RedReign/5ee291a1048ad661e3d867aafa262af0/raw/282e8573c504f09f910b7b9e07ab0cf57a60eaa7/OGL5eBorder.svg") !important;
+    border-image-slice: 6% 8% 12% 8%;
+    border-image-width: 16px 19px 35px 19px;
+    border-image-repeat: round;
+}*/
+
 .licensecontainer .container:not(.npc) div.page.spells > div.header {
     background: url("https://gistcdn.githack.com/RedReign/38cfe2044172cfdf65767bfd2d3472b6/raw/d15fb90aa8e01aeb586f25496ea4552f5a1e5c08/OGLbioScroll.svg") !important;
     background-repeat: no-repeat !important;
