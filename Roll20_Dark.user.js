@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2021.4.5.0
+// @version       2021.4.7.0
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -15,6 +15,10 @@
     /* margin-left: 0; */
     background-color: hsl(0,0%,10%);
     color: hsl(0,0%,80%);
+}
+
+.tipsy-inner{
+visibility:hidden !important;
 }
 
 .ui-dialog .ui-dialog-titlebar {
