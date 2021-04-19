@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2021.4.7.0
+// @version       2021.4.19.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -17,9 +17,20 @@
     color: hsl(0,0%,80%);
 }
 
-.tipsy-inner{
-visibility:hidden !important;
+/*
+Piety Box, Hit dice
+*/
+.piety .container {
+    background-color: hsl(0,0%,10%)!important;
 }
+.piety .container .header .score {
+    background: url(https://imgsrv.roll20.net/?src=gistcdn.githack.com/RedReign/cef80b44113b2b25d6a563861ef54275/raw/b1219d2ba4a3f721df88e4a4aea5790b412bb05c/box.svg) !important;
+}
+.charsheet .licensecontainer .new-hit-dice {
+    border-image-source: url(https://imgsrv.roll20.net/?src=gistcdn.githack.com/RedReign/cef80b44113b2b25d6a563861ef54275/raw/b1219d2ba4a3f721df88e4a4aea5790b412bb05c/box.svg) !important;
+}
+
+
 
 .ui-dialog .ui-dialog-titlebar {
     background-color: hsl(0,0%,10%);
@@ -382,10 +393,47 @@ NPC SHEETS
 
 
 /*
+Charactermancer
+*/
+.hilite{
+background-color: hsl(0,0%,10%) !important;
+	
+}
+.mancer_confirm{
+background-color: hsl(0,0%,10%) !important;
+color: hsl(0,0%,80%) !important;
+}
 
+.lp-steps {
+    background-color: hsl(0,0%,10%) !important;
+}
 
+.bottombar {
+    background-color: hsl(0,0%,10%) !important;
+}
+.charmancer .levels-hp-row {
+    background-color: hsl(0,0%,10%) !important;
+}
 
+.class1_rollhp, .class2_rollhp, .class3_rollhp, .class4_rollhp{
+    border-color: black !important;
+    background-color: #E8E8E8 !important;
+    color: black !important;
+	
+}
 
+.levels-hp-row, .hpbylevel{
+	
+background-color: hsl(0, 0%, 10%) !important;
+
+}
+/*
+.mancer_confirm_flag[value="1"] ~ .mancer_confirm {
+    color: black !important;
+}
+*/
+
+/*
 
 
 */
