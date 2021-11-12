@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2021.4.19.1
+// @version       2021.10.09.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -485,7 +485,7 @@ body {
 	border: 0 !important;
 	border-radius: 0 !important;
 	padding: 0 !important;
-	width: 190px !important;
+	width: 250% !important;
 }
 
 #floatingtoolbar div.submenu ul li {
@@ -2273,6 +2273,13 @@ if (typeof GM_addStyle != "undefined") {
 }
 })();
 (function(){
+//Change Torch Image
+const img = document.getElementById("placelighticon");
+img.onload = function () {
+};
+img.src = "https://s3.amazonaws.com/dnd.soulphx.net/files/images/torch.png";
+
+
 const el = document.createElement("link");
 el.rel = "stylesheet";
 el.href = "/css/licensed5ednd.css";
