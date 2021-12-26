@@ -457,7 +457,7 @@ background-color: hsl(0, 0%, 10%) !important;
 }
 
 body {
-    background:url(https://www.toptal.com/designers/subtlepatterns/patterns/dark_leather.png)!important;
+    background:url(https://s3.amazonaws.com/dnd.soulphx.net/DarkMode/dark_leather.png)!important;
 }
 
 #floatingtoolbar, #floatinglayerbar {
