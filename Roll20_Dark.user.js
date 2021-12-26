@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2021.10.09.1
+// @version       2021.12.25.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
