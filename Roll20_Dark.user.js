@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2021.12.25.1
+// @version       2022.1.6.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -460,6 +460,7 @@ body {
     background:url(https://s3.amazonaws.com/dnd.soulphx.net/DarkMode/dark_leather.png)!important;
 }
 
+
 #floatingtoolbar, #floatinglayerbar {
 	background-color:hsl(0,0%,10%) !important;
 	border: none !important;
@@ -637,6 +638,7 @@ background-color: #282150 !important;
 #sidebarcontrol .fonticon-menu {
 	display: none !important;
 }
+
 
 #sidebarcontrol:after {
 	content: \'Menu\' !important;
@@ -2245,6 +2247,23 @@ div.sheet-rolltemplate-desc div.sheet-desc.sheet-info .sheet-bottom {
     background-color: hsl(0,0%,10%) !important;
     color: hsl(0,0%,75%) !important;
 }
+
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 4px;
+    background-color: hsl(0,0%,20%)!important;
+}
+
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    background-color: hsl(0,0%,20%)!important;
+}
+
+.panel-default {
+    border-color: #5a5a5a;
+}
 `;
 if (typeof GM_addStyle != "undefined") {
 	GM_addStyle(css);
@@ -2276,6 +2295,7 @@ if (typeof GM_addStyle != "undefined") {
 //Change Torch Image
 const img = document.getElementById("placelighticon");
 img.onload = function () {
+img.src = "https://s3.amazonaws.com/dnd.soulphx.net/files/images/torch.png";
 };
 img.src = "https://s3.amazonaws.com/dnd.soulphx.net/files/images/torch.png";
 
