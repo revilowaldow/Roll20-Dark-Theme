@@ -727,7 +727,7 @@ code {
 }
 
 #textchat-input {
-	width:300px!important;
+	width:95% !important;
 	right:0!important;
 	bottom:0!important;
 	background-color:hsl(0,0%,10%)!important;
